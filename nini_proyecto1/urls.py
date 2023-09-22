@@ -18,9 +18,13 @@ from django.contrib import admin
 from django.urls import path
 from nini_app1 import views as v1
 from nini_app1 import views as v2
+from nini_app2 import views as v3
+from nini_app2 import views as v4
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('vista1/', v1.vistaUno),
-    path('vista2/', v1.vistaDos),
+    path('vista2/', v2.vistaDos),
+    path('vista3/', v3.vistaTres),
+    path('vista4/', v4.vistaCuatro),
 ]
