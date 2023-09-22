@@ -16,7 +16,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from nini_app1 import views as v1
+from nini_app1 import views as v2
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('vista1/', v1.vistaUno),
+    path('vista2/', v1.vistaDos),
 ]
